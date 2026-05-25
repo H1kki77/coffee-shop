@@ -1,0 +1,40 @@
+@use '../../base/variables.scss' as *;
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding-top: 30px;
+
+    .menu-list {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 40px;
+
+        li:first-child {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('../../images/coffee-beans-white.svg');
+                left: -30px;
+                bottom: 5px;
+                width: 35px;
+                height: 35px;
+                filter: drop-shadow($shadow);
+            }
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #fff;
+            text-shadow: $shadow;
+            font-size: 12px;
+            font-weight: 200;
+        }
+    }
+}

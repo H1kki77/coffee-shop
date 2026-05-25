@@ -1,0 +1,49 @@
+@use '../../base/mixins.scss' as *;
+@use '../../base/variables.scss' as *;
+
+.hero {
+    background-image: url('../../images/hero-bg.jpg');
+    background-size: cover;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .h1-title {
+        @include h1-title;
+    }
+
+    .h2-wrapper {
+        margin-top: 15px;
+        text-align: center;
+
+        .h2-title_white {
+            @include h2-title;
+            color: #fff;
+            margin-top: 20px;
+            font-weight: 500;
+            text-shadow: $shadow;
+        }
+    }
+
+    .btn-more {
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        background: transparent;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        outline: none;
+        transition: .3s;
+
+        &:hover {
+            color: #000;
+            background: #fff;
+        }
+    }
+}

@@ -1,17 +1,19 @@
-import './header.scss';
+import './footer.scss';
+import Divider from '../divider/divider';
 
-const Header = () => {
+const Footer = () => {
     return (
-        <header className="header">
-            <div className='container menu-wrapper'>
+        <footer className="footer">
+            <div className='container'>
                 <ul className="menu-list">
                     <li><a href="#" className="menu-item">Coffee house</a></li>
                     <li><a href="#" className="menu-item">Our coffee</a></li>
                     <li><a href="#" className="menu-item">For your pleasure</a></li>
                 </ul>
             </div>
-        </header>
+            <Divider />
+        </footer>
     )
 }
 
-export default Header;
+export default Footer;

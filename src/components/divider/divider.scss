@@ -1,0 +1,39 @@
+@use '../../base/variables.scss' as *;
+
+.divider {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    gap: 25px;
+
+    &-icon {
+        position: relative;
+        width: 30px;
+        height: 30px;
+
+        &_white {
+            filter: drop-shadow($shadow);
+        }
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        background-color: #000;
+        height: 1px;
+        width: 60px;
+    }
+
+    &_white {
+
+        &::before,
+        &::after {
+            background-color: #fff;
+            filter: drop-shadow($shadow);
+        }
+    }
+}
