@@ -1,7 +1,7 @@
 @use '../../base/mixins.scss' as *;
 @use '../../base/variables.scss' as *;
 
-.hero {
+.hero-home {
     background-image: url('../../images/hero-bg.jpg');
     background-size: cover;
     min-height: 640px;
@@ -24,7 +24,7 @@
             color: #fff;
             margin-top: 20px;
             font-weight: 500;
-            text-shadow: $shadow;
+            text-shadow: $text-shadow;
         }
     }
 

@@ -1,0 +1,40 @@
+@use '../../base/mixins.scss' as *;
+@use '../../base/variables.scss' as *;
+
+.about-our-coffee {
+    position: relative;
+    padding: 70px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+        .text-wrapper {
+            max-width: 346px;
+
+            .descr-wrapper {
+                margin-top: 25px;
+                font-size: 14px;
+                font-weight: 200;
+                letter-spacing: 0;
+                line-height: auto;
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 240px;
+        text-align: center;
+        background-color: #000;
+        bottom: 0;
+    }
+
+}

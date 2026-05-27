@@ -1,0 +1,12 @@
+@use '../../base/mixins.scss' as *;
+@use '../../base/variables.scss' as *;
+
+.catalog-our-coffee {
+    padding: 60px 0 30px;
+
+    .finding-product_wrapper {
+        display: flex;
+        justify-content: center;
+        column-gap: 85px;
+    }
+}

@@ -1,6 +1,6 @@
-import './hero.scss';
-import './about.scss';
-import './best.scss';
+import './hero-home.scss';
+import './about-home.scss';
+import './best-home.scss';
 
 import Divider from '../../components/divider/divider';
 import ProductCard from '../../components/product-card/product-card';
@@ -8,7 +8,7 @@ import ProductCard from '../../components/product-card/product-card';
 const Home = () => {
     return (
         <div className='home'>
-            <section className="hero">
+            <section className="hero-home">
                 <h1 className='h1-title'>Everything You Love About Coffee</h1>
                 <Divider color="white" />
                 <div className="h2-wrapper">
@@ -17,7 +17,7 @@ const Home = () => {
                 <button className="btn-more">More</button>
             </section>
 
-            <section className="about">
+            <section className="about-home">
                 <div className="container"><h2 className="h2-title">About Us</h2>
                     <Divider />
                     <div className="about__text-wrapper">
@@ -31,10 +31,11 @@ const Home = () => {
                             horrible but confined day end marriage. Eagerness furniture set preserved far
                             recommend. Did even but nor are most gave hope. Secure active living depend son
                             repair day ladies now.</p>
-                    </div></div>
+                    </div>
+                </div>
             </section>
 
-            <section className="best">
+            <section className="best-home">
                 <div className="container">
                     <h2 className="h2-title">Our best</h2>
                     <ProductCard />

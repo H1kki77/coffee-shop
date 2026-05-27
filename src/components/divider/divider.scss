@@ -15,7 +15,7 @@
         height: 30px;
 
         &_white {
-            filter: drop-shadow($shadow);
+            filter: drop-shadow($text-shadow);
         }
     }
 
@@ -33,7 +33,7 @@
         &::before,
         &::after {
             background-color: #fff;
-            filter: drop-shadow($shadow);
+            filter: drop-shadow($text-shadow);
         }
     }
 }

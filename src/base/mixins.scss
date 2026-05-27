@@ -7,7 +7,7 @@
     font-size: 40px;
     font-weight: 500;
     color: #fff;
-    text-shadow: $shadow;
+    text-shadow: $text-shadow;
 }
 
 @mixin h2-title {
@@ -26,4 +26,11 @@
     font-size: 14px;
     font-weight: 200;
     color: #000;
+}
+
+@mixin btn {
+    width: 75px;
+    height: 30px;
+    background-color: #fff;
+    box-shadow: $btn-shadow;
 }
