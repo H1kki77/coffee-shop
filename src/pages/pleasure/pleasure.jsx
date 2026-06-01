@@ -31,7 +31,7 @@ const Pleasure = (props) => {
             <ProductCard
                 data={data}
                 catalog
-                onSelectedProduct={(card) => props.changePage('single-product', null, card)} />
+                onSelectedProduct={(card) => changePage('single-product', null, card)} />
         </div>
     )
 }
