@@ -5,7 +5,7 @@ import aromisticoImg from '../../images/product-cards/aromistico-beans.svg';
 import './product-card.scss';
 
 const ProductCard = (props) => {
-    const { data, catalog } = props;
+    const { data, catalog, onSelectedProduct } = props;
 
     const homeCards = [
         {
@@ -30,7 +30,10 @@ const ProductCard = (props) => {
                     price = card.price,
                     country = card.country;
                 return (
-                    <div key={card.id} className={`product-card ${catalog ? 'product-card_catalog' : ''}`}>
+                    <div
+                        key={card.id}
+                        className={`product-card ${catalog ? 'product-card_catalog' : ''}`}
+                        onClick={() => onSelectedProduct && onSelectedProduct(card)}>
                         <img src={image} alt="Coffee card" />
                         <h3 className="product-card__title">{title}</h3>
                         {country && <p className='product-card__country'>{country}</p>}

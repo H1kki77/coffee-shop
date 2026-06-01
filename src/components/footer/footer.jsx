@@ -10,7 +10,7 @@ const Footer = (props) => {
                     <li>
                         <a onClick={(e) => {
                             e.preventDefault();
-                            changePage('home');
+                            changePage('home', null);
                         }}
                             href="#"
                             className="menu-item">
@@ -21,7 +21,7 @@ const Footer = (props) => {
                     <li>
                         <a onClick={(e) => {
                             e.preventDefault();
-                            changePage('our-coffee');
+                            changePage('our-coffee', null);
                         }}
                             href="#"
                             className="menu-item">
@@ -32,7 +32,7 @@ const Footer = (props) => {
                     <li>
                         <a onClick={(e) => {
                             e.preventDefault();
-                            changePage('pleasure');
+                            changePage('pleasure', null);
                         }}
                             href="#"
                             className="menu-item">

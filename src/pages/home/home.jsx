@@ -5,7 +5,8 @@ import './best-home.scss';
 import Divider from '../../components/divider/divider';
 import ProductCard from '../../components/product-card/product-card';
 
-const Home = () => {
+const Home = (props) => {
+    const { changePage } = props;
     return (
         <div className='home'>
             <section className="hero-home">
@@ -14,7 +15,14 @@ const Home = () => {
                 <div className="h2-wrapper">
                     <h2 className='h2-title h2-title_white'>We makes every day full of energy and taste</h2>
                     <h2 className='h2-title h2-title_white'>Want to try our beans?</h2></div>
-                <button className="btn-more">More</button>
+                <button
+                    className="btn-more"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        changePage('our-coffee', 'catalog-our-coffee');
+                    }}>
+                    More
+                </button>
             </section>
 
             <section className="about-home">

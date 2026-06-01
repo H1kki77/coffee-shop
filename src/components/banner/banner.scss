@@ -1,0 +1,15 @@
+@use '../../base/mixins.scss' as *;
+@use '../../base/variables.scss' as *;
+
+.banner {
+    background-size: cover;
+    width: 100%;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+
+    .h1-title {
+        @include h1-title;
+        text-align: center;
+    }
+}

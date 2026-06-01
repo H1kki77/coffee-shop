@@ -1,0 +1,67 @@
+@use '../../base/mixins.scss' as *;
+@use '../../base/variables.scss' as *;
+
+.about-single-product {
+    margin: 70px 0 30px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        column-gap: 55px;
+
+        .img-wrapper {
+
+            img {
+                max-width: 392px;
+                box-shadow: $img-shadow;
+            }
+
+
+        }
+
+        .content-wrapper {
+            max-width: 420px;
+
+            .h2-title {
+                position: relative;
+                @include h2-title;
+
+                .btn-back {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    color: #000;
+                    font-size: 12px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+            }
+
+
+            .text-wrapper {
+                margin-top: 26px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                row-gap: 16px;
+
+                &__paragraph {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 200;
+
+                }
+
+                &__price {
+                    font-size: 24px;
+                }
+
+                &__title {
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+}
